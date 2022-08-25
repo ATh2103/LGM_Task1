@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 200px;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(90deg, rgb(195, 228, 164) ,rgb(11, 99, 137)  );
+}
+
+.blur_body{
+    width: 80%;
+    height:100px;
+}
+.text{
+    align-items: center;
+    font-family: 'Lobster' , cursive;
+    color: #8673A1 ;
+    border: #111;
+    padding: 0 9rem;
+}
+
+.text:hover{
+    transition: 0.5s;
+    color:#111;
+    text-shadow: 0 3px 1px #fff;
+}
+.container{
+    height: 500px;
+    width: 40%;
+    background: rgb(255,255,255,0.2);
+    border: solid 5px linear-gradient(to left, #fff, #111);
+	border-radius: 0.8rem;
+    backdrop-filter: blur(80px);
+    padding: 15px;
+    box-shadow: 0 15px 15px rgb(0,0,0,0.5);
+    overflow-y: auto;
+}
+
+#input{
+    padding: 0 15px;
+    margin: 20px 0;
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(238, 238, 165);
+    color: #111
+}
+
+#input::placeholder{
+    color: rgb(170,170,170, 0.7);
+
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    padding-right: 100px;
+    backdrop-filter: blur(5px);
+}
+
+ul li{
+    color:#111;
+    height: 3rem;
+    border-radius: 1rem;
+    margin: 10px 0;
+    padding: 15px;
+    position: relative;
+}
+
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor:pointer;
+}
+
+ul .fa-check{
+    right: 50px;
+    color: green;
+    text-shadow: 0 2px 2px rgb(0,0,0,0.5);
+}
+
+ul .fa-trash{
+    right: 20px;
+    color: red;
+    text-shadow: 0 2px 2px rgb(0,0,0,0.5);
+}
+
+ul .checked{
+    background-color: lightgreen ;
+    text-decoration:line-through;
+    transition: 0.5s;
+}
